@@ -41,5 +41,13 @@ curl -sS https://starship.rs/install.sh | sh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
+# Add custom aliases
+echo -e "\n# Custom Aliases" >> ~/.bashrc
+echo "alias ls='exa --icons'" >> ~/.bashrc
+echo "alias cat='bat --style=auto'" >> ~/.bashrc
+
+# Reload bash configuration
+source ~/.bashrc
+
 echo "Setup complete!"
 
