@@ -1,0 +1,18 @@
+[user]
+	name = Hilbert Nunes
+	email = hilbert.nunes.dev@gmail.com
+[core]
+	editor = vim
+	excludesfile = /home/hilbert/.gitignore_global
+	autocrlf = input
+[commit]
+	template = /home/hilbert/.gitmessage.txt
+[help]
+	autocorrect = 1
+[init]
+	defaultBranch = main
+[alias]
+	st = status -sb
+	ll = log --oneline
+	last = log -1 HEAD --stat
+	ac = !git add -A && git commit
